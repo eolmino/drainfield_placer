@@ -1,0 +1,257 @@
+"id","flow_gpd","configuration_name","drainfield_size","unobstructed_area"
+513,100,"Bed",167,251
+514,100,"Trench",125,188
+515,100,"Bed with ATU",126,189
+516,100,"Trench with ATU",94,141
+517,100,"Bed split in half",84,126
+518,100,"Trench split in half",63,95
+519,100,"Bed split in half with ATU",63,95
+520,100,"Trench split in half with ATU",47,71
+521,200,"Bed",334,501
+522,200,"Trench",250,375
+523,200,"Bed with ATU",251,377
+524,200,"Trench with ATU",188,282
+525,200,"Bed split in half",167,251
+526,200,"Trench split in half",125,188
+527,200,"Bed split in half with ATU",126,189
+528,200,"Trench split in half with ATU",94,141
+529,300,"Bed",500,750
+530,300,"Trench",375,563
+531,300,"Bed with ATU",375,563
+532,300,"Trench with ATU",282,423
+533,300,"Bed split in half",250,375
+534,300,"Trench split in half",188,282
+535,300,"Bed split in half with ATU",188,282
+536,300,"Trench split in half with ATU",141,212
+537,400,"Bed",667,1001
+538,400,"Trench",500,750
+539,400,"Bed with ATU",501,752
+540,400,"Trench with ATU",375,563
+541,400,"Bed split in half",334,501
+542,400,"Trench split in half",250,375
+543,400,"Bed split in half with ATU",251,377
+544,400,"Trench split in half with ATU",188,282
+545,460,"Bed",767,1151
+546,460,"Trench",575,863
+547,460,"Bed with ATU",576,864
+548,460,"Trench with ATU",432,648
+549,460,"Bed split in half",384,576
+550,460,"Trench split in half",288,432
+551,460,"Bed split in half with ATU",288,432
+552,460,"Trench split in half with ATU",216,324
+553,520,"Bed",867,1301
+554,520,"Trench",650,975
+555,520,"Bed with ATU",651,977
+556,520,"Trench with ATU",488,732
+557,520,"Bed split in half",434,651
+558,520,"Trench split in half",325,488
+559,520,"Bed split in half with ATU",326,489
+560,520,"Trench split in half with ATU",244,366
+561,580,"Bed",967,1451
+562,580,"Trench",725,1088
+563,580,"Bed with ATU",726,1089
+564,580,"Trench with ATU",544,816
+565,580,"Bed split in half",484,726
+566,580,"Trench split in half",363,545
+567,580,"Bed split in half with ATU",363,545
+568,580,"Trench split in half with ATU",272,408
+569,640,"Bed",1067,1601
+570,640,"Trench",800,1200
+571,640,"Bed with ATU",801,1202
+572,640,"Trench with ATU",600,900
+573,640,"Bed split in half",534,801
+574,640,"Trench split in half",400,600
+575,640,"Bed split in half with ATU",401,602
+576,640,"Trench split in half with ATU",300,450
+577,700,"Bed",1167,1751
+578,700,"Trench",875,1313
+579,700,"Bed with ATU",876,1314
+580,700,"Trench with ATU",657,986
+581,700,"Bed split in half",584,876
+582,700,"Trench split in half",438,657
+583,700,"Bed split in half with ATU",438,657
+584,700,"Trench split in half with ATU",329,494
+585,760,"Bed",1267,1901
+586,760,"Trench",950,1425
+587,760,"Bed with ATU",951,1427
+588,760,"Trench with ATU",713,1070
+589,760,"Bed split in half",634,951
+590,760,"Trench split in half",475,713
+591,760,"Bed split in half with ATU",476,714
+592,760,"Trench split in half with ATU",357,536
+593,820,"Bed",1367,2051
+594,820,"Trench",1025,1538
+595,820,"Bed with ATU",1026,1539
+596,820,"Trench with ATU",769,1154
+597,820,"Bed split in half",684,1026
+598,820,"Trench split in half",513,770
+599,820,"Bed split in half with ATU",513,770
+600,820,"Trench split in half with ATU",385,578
+601,880,"Bed",1467,2201
+602,880,"Trench",1100,1650
+603,880,"Bed with ATU",1101,1652
+604,880,"Trench with ATU",825,1238
+605,880,"Bed split in half",734,1101
+606,880,"Trench split in half",550,825
+607,880,"Bed split in half with ATU",551,827
+608,880,"Trench split in half with ATU",413,620
+609,940,"Bed",1567,2351
+610,940,"Trench",1175,1763
+611,940,"Bed with ATU",1176,1764
+612,940,"Trench with ATU",882,1323
+613,940,"Bed split in half",784,1176
+614,940,"Trench split in half",588,882
+615,940,"Bed split in half with ATU",588,882
+616,940,"Trench split in half with ATU",441,662
+617,1000,"Bed",1667,2501
+618,1000,"Trench",1250,1875
+619,1000,"Bed with ATU",1251,1877
+620,1000,"Trench with ATU",938,1407
+621,1000,"Bed split in half",834,1251
+622,1000,"Trench split in half",625,938
+623,1000,"Bed split in half with ATU",626,939
+624,1000,"Trench split in half with ATU",469,704
+625,1060,"Bed",1767,2651
+626,1060,"Trench",1325,1988
+627,1060,"Bed with ATU",1326,1989
+628,1060,"Trench with ATU",994,1491
+629,1060,"Bed split in half",884,1326
+630,1060,"Trench split in half",663,995
+631,1060,"Bed split in half with ATU",663,995
+632,1060,"Trench split in half with ATU",497,746
+633,1120,"Bed",1867,2801
+634,1120,"Trench",1400,2100
+635,1120,"Bed with ATU",1401,2102
+636,1120,"Trench with ATU",1050,1575
+637,1120,"Bed split in half",934,1401
+638,1120,"Trench split in half",700,1050
+639,1120,"Bed split in half with ATU",701,1052
+640,1120,"Trench split in half with ATU",525,788
+641,1180,"Bed",1967,2951
+642,1180,"Trench",1475,2213
+643,1180,"Bed with ATU",1476,2214
+644,1180,"Trench with ATU",1107,1661
+645,1180,"Bed split in half",984,1476
+646,1180,"Trench split in half",738,1107
+647,1180,"Bed split in half with ATU",738,1107
+648,1180,"Trench split in half with ATU",554,831
+649,1240,"Bed",2067,3101
+650,1240,"Trench",1550,2325
+651,1240,"Bed with ATU",1551,2327
+652,1240,"Trench with ATU",1163,1745
+653,1240,"Bed split in half",1034,1551
+654,1240,"Trench split in half",775,1163
+655,1240,"Bed split in half with ATU",776,1164
+656,1240,"Trench split in half with ATU",582,873
+657,1300,"Bed",2167,3251
+658,1300,"Trench",1625,2438
+659,1300,"Bed with ATU",1626,2439
+660,1300,"Trench with ATU",1219,1829
+661,1300,"Bed split in half",1084,1626
+662,1300,"Trench split in half",813,1220
+663,1300,"Bed split in half with ATU",813,1220
+664,1300,"Trench split in half with ATU",610,915
+665,1360,"Bed",2267,3401
+666,1360,"Trench",1700,2550
+667,1360,"Bed with ATU",1701,2552
+668,1360,"Trench with ATU",1275,1913
+669,1360,"Bed split in half",1134,1701
+670,1360,"Trench split in half",850,1275
+671,1360,"Bed split in half with ATU",851,1277
+672,1360,"Trench split in half with ATU",638,957
+673,1420,"Bed",2367,3551
+674,1420,"Trench",1775,2663
+675,1420,"Bed with ATU",1776,2664
+676,1420,"Trench with ATU",1332,1998
+677,1420,"Bed split in half",1184,1776
+678,1420,"Trench split in half",888,1332
+679,1420,"Bed split in half with ATU",888,1332
+680,1420,"Trench split in half with ATU",666,999
+681,1480,"Bed",2467,3701
+682,1480,"Trench",1850,2775
+683,1480,"Bed with ATU",1851,2777
+684,1480,"Trench with ATU",1388,2082
+685,1480,"Bed split in half",1234,1851
+686,1480,"Trench split in half",925,1388
+687,1480,"Bed split in half with ATU",926,1389
+688,1480,"Trench split in half with ATU",694,1041
+689,1540,"Bed",2567,3851
+690,1540,"Trench",1925,2888
+691,1540,"Bed with ATU",1926,2889
+692,1540,"Trench with ATU",1444,2166
+693,1540,"Bed split in half",1284,1926
+694,1540,"Trench split in half",963,1445
+695,1540,"Bed split in half with ATU",963,1445
+696,1540,"Trench split in half with ATU",722,1083
+697,1600,"Bed",2667,4001
+698,1600,"Trench",2000,3000
+699,1600,"Bed with ATU",2001,3002
+700,1600,"Trench with ATU",1500,2250
+701,1600,"Bed split in half",1334,2001
+702,1600,"Trench split in half",1000,1500
+703,1600,"Bed split in half with ATU",1001,1502
+704,1600,"Trench split in half with ATU",750,1125
+705,1660,"Bed",2767,4151
+706,1660,"Trench",2075,3113
+707,1660,"Bed with ATU",2076,3114
+708,1660,"Trench with ATU",1557,2336
+709,1660,"Bed split in half",1384,2076
+710,1660,"Trench split in half",1038,1557
+711,1660,"Bed split in half with ATU",1038,1557
+712,1660,"Trench split in half with ATU",779,1169
+713,1720,"Bed",2867,4301
+714,1720,"Trench",2150,3225
+715,1720,"Bed with ATU",2151,3227
+716,1720,"Trench with ATU",1613,2420
+717,1720,"Bed split in half",1434,2151
+718,1720,"Trench split in half",1075,1613
+719,1720,"Bed split in half with ATU",1076,1614
+720,1720,"Trench split in half with ATU",807,1211
+721,1780,"Bed",2967,4451
+722,1780,"Trench",2225,3338
+723,1780,"Bed with ATU",2226,3339
+724,1780,"Trench with ATU",1669,2504
+725,1780,"Bed split in half",1484,2226
+726,1780,"Trench split in half",1113,1670
+727,1780,"Bed split in half with ATU",1113,1670
+728,1780,"Trench split in half with ATU",835,1253
+729,1840,"Bed",3067,4601
+730,1840,"Trench",2300,3450
+731,1840,"Bed with ATU",2301,3452
+732,1840,"Trench with ATU",1725,2588
+733,1840,"Bed split in half",1534,2301
+734,1840,"Trench split in half",1150,1725
+735,1840,"Bed split in half with ATU",1151,1727
+736,1840,"Trench split in half with ATU",863,1295
+737,1900,"Bed",3167,4751
+738,1900,"Trench",2375,3563
+739,1900,"Bed with ATU",2376,3564
+740,1900,"Trench with ATU",1782,2673
+741,1900,"Bed split in half",1584,2376
+742,1900,"Trench split in half",1188,1782
+743,1900,"Bed split in half with ATU",1188,1782
+744,1900,"Trench split in half with ATU",891,1337
+745,1960,"Bed",3267,4901
+746,1960,"Trench",2450,3675
+747,1960,"Bed with ATU",2451,3677
+748,1960,"Trench with ATU",1838,2757
+749,1960,"Bed split in half",1634,2451
+750,1960,"Trench split in half",1225,1838
+751,1960,"Bed split in half with ATU",1226,1839
+752,1960,"Trench split in half with ATU",919,1379
+753,2020,"Bed",3367,5051
+754,2020,"Trench",2525,3788
+755,2020,"Bed with ATU",2526,3789
+756,2020,"Trench with ATU",1894,2841
+757,2020,"Bed split in half",1684,2526
+758,2020,"Trench split in half",1263,1895
+759,2020,"Bed split in half with ATU",1263,1895
+760,2020,"Trench split in half with ATU",947,1421
+761,2080,"Bed",3467,5201
+762,2080,"Trench",2600,3900
+763,2080,"Bed with ATU",2601,3902
+764,2080,"Trench with ATU",1950,2925
+765,2080,"Bed split in half",1734,2601
+766,2080,"Trench split in half",1300,1950
+767,2080,"Bed split in half with ATU",1301,1952
+768,2080,"Trench split in half with ATU",975,1463

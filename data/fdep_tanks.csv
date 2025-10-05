@@ -1,0 +1,106 @@
+"id","manufacturer_id","tank_number","wall_thickness","liquid_depth","gallons_liquid","gallons_total","category","use_type","family","width","length","top_depth","exterior_depth","inlet_outlet_drop","approval_date","remarks","tank_type","in_out_drop","effective_gallons"
+196,38,"70-109-08S-C3","0.25","42.00",750,911,"C3",NULL,NULL,"60.00","96.00",NULL,NULL,NULL,"2004-07-22","Polyethylene-monolithic. Reviewed 9/5/19.","septic","3.00",750
+197,38,"70-109-09S-C3","0.25","42.00",900,1059,"C3",NULL,NULL,"60.00","111.00",NULL,NULL,NULL,"2004-07-22","Polyethylene-monolithic. Reviewed 9/5/19.","septic","3.00",900
+214,35,"70-143-03S-C3","0.50","38.00",NULL,310,"C3",NULL,NULL,"47.00","50.00",NULL,NULL,NULL,NULL,"Graywater, laundry, or pump tank, or part of a septic tank in
+  series. Pump tank may be manufactured without outlet hole. TW-300","dosing",NULL,250
+215,35,"70-143-04S-C3","0.70","40.00",NULL,417,"C3",NULL,NULL,"59.60","59.60",NULL,NULL,NULL,NULL,"Can be used as a pump tank only. Insufficient airspace to be
+   used as septic tank or laundry tank. Pump tank may be manufactured without outlet hole. TW-375","dosing",NULL,375
+216,35,"70-143-05S-C3","0.50","40.00",NULL,500,"C3",NULL,NULL,"60.40","62.50",NULL,NULL,NULL,NULL,"Graywater, laundry, or pump tank, or part of a septic tank
+  in series. Pump tank may be manufactured without outlet hole. TW-500","dosing",NULL,425
+217,35,"70-143-09D-C3","0.70","40.00",NULL,1060,"C3",NULL,NULL,"66.00","96.20",NULL,NULL,NULL,NULL,"Dual compartment polyethylene tank with two internal
+  stiffeners and baffle. baffle supported by two horizontal beams. TW-900","septic","2.75",900
+218,35,"70-143-09S-C3","0.70","40.00",NULL,1060,"C3",NULL,NULL,"66.00","96.20",NULL,NULL,NULL,NULL,"Single compartment polyethylene tank with two internal
+  stiffeners. TW-900","septic","2.75",900
+219,35,"70-143-10D-C3","0.70","40.00",NULL,1217,"C3",NULL,NULL,"66.00","109.50",NULL,NULL,NULL,NULL,"Dual compartment polyethylene tank with two internal
+  stiffeners and baffle attached to stiffener. TW-1050","septic","2.75",1050
+220,35,"70-143-10S-C3","0.70","40.00",NULL,1217,"C3",NULL,NULL,"66.00","109.50",NULL,NULL,NULL,NULL,"Single compartment polyethylene tank with two internal
+  stiffeners. TW-1050","septic","2.75",1050
+221,35,"70-143-11D-C4","0.20","44.00",NULL,1280,"C4",NULL,NULL,"62.20","127.00",NULL,NULL,NULL,NULL,"Dual compartment polypropylene tank with internal two vertical
+  stiffeners and six horizontal stiffeners, and baffle attached to stiffener. Midseam length and width. Use of side
+   inlets/outlets not allowed in Florida. Minimum burial depth is six inches. IM-1060","septic","2.00",1090
+222,35,"70-143-11D-C3","0.20","44.00",NULL,1280,"C3",NULL,NULL,"62.20","127.00",NULL,NULL,NULL,NULL,"Dual compartment polypropylene tank with internal two vertical
+  stiffeners and baffle attached to stiffener. Midseam length and width. Use of side inlets/outlets not allowed in
+  Florida. Minimum burial depth is six inches. Approximate top length and width. IM-1060","septic","3.00",1090
+223,35,"70-143-11S-C4","0.20","44.00",NULL,1280,"C4",NULL,NULL,"62.20","127.00",NULL,NULL,NULL,NULL,"Single compartment polypropylene tank with internal two
+  vertical stiffeners and six horizontal stiffeners. Midseam length and width. Use of side inlets/outlets not
+  allowed in Florida. Minimum burial depth is six inches. IM-1060","septic","2.00",1090
+224,35,"70-143-11S-C3","0.20","44.00",NULL,1280,"C3",NULL,NULL,"62.20","127.00",NULL,NULL,NULL,NULL,"Single compartment polypropylene tank with internal two
+  vertical stiffeners. Midseam length and width. Use of side inlets/outlets not allowed in Florida. Minimum burial
+  depth is six inches. Approximate top length and width. IM-1060","septic","3.00",1090
+225,35,"70-143-12D-C4","0.20","44.00",NULL,1480,"C4",NULL,NULL,"61.70","152.30",NULL,NULL,NULL,NULL,"Dual compartment polypropylene tank with four vertical
+  stiffeners and baffle attached to stiffener. Midseam length and width. Use of side inlets/outlets not allowed in
+  Florida. Minimum burial depth is 6 inches, maximum 48 inches. IM-1250","septic","2.00",1278
+226,35,"70-143-12S-C4","0.20","44.00",NULL,1480,"C4",NULL,NULL,"61.70","152.30",NULL,NULL,NULL,NULL,"Single compartment polypropylene tank with four vertical
+  stiffeners. Midseam length and width. Use of side inlets/outlets not allowed in Florida. Burial depth minimum 6
+  inches, maximum 48 inches. IM-1250","septic","2.00",1278
+227,35,"70-143-13D-C3","0.70","40.00",NULL,1451,"C3",NULL,NULL,"66.00","129.50",NULL,NULL,NULL,NULL,"Dual compartment polyethylene tank with three internal
+  stiffeners and baffle attached to stiffener. TW-1250","septic","2.75",1250
+228,35,"70-143-13S-C3","0.70","40.00",NULL,1451,"C3",NULL,NULL,"66.00","129.50",NULL,NULL,NULL,NULL,"Single compartment polyethylene tank with three internal
+  stiffeners. TW-1250","septic","2.75",1250
+198,38,"70-109-11S-C3","0.25","42.00",1050,1225,"C3",NULL,NULL,"60.00","126.00",NULL,NULL,NULL,"2004-07-22","Polyethylene-monolithic stiffening. Reviewed 9/5/19.","septic","3.00",1050
+199,38,"70-109-13S-C3","0.25","42.00",1250,1464,"C3",NULL,NULL,"60.00","146.00",NULL,NULL,NULL,"2005-07-14","Polyethylene-monolithic stiffening. Reviewed 9/5/19.","septic","3.00",1250
+200,38,"70-109-16S-C3","0.25","42.00",1500,1745,"C3",NULL,NULL,"60.00","175.00",NULL,NULL,NULL,"2005-07-14","Polyethylene-monolithic stiffening. Reviewed 9/5/19.","septic","3.00",1500
+201,38,"70-109-20S-C3","0.33","40.00",900,NULL,"C3",NULL,NULL,"60.00","111.00",NULL,NULL,NULL,"2009-04-16","Polyethylene tank----Wall thickness is nominal----tank shot
+  weight is nominal 410 lbs. Reviewed 9/5/19.","septic","2.00",900
+202,38,"70-109-21S-C3","0.33","40.00",1050,NULL,"C3",NULL,NULL,"60.00","126.00",NULL,NULL,NULL,"2009-04-16","Polyethylene tank----Wall thickness is nominal----tank shot
+  weight is nominal 450 lbs. Reviewed 9/5/19.","septic","2.00",1050
+203,38,"70-109-22S-C3","0.33","40.00",1250,NULL,"C3",NULL,NULL,"60.00","146.00",NULL,NULL,NULL,"2009-04-16","Polyethylene tank----Wall thickness is nominal----tank shot
+  weight is nominal 550 lbs. Reviewed 9/5/19.","septic","2.00",1250
+204,38,"70-109-23S-C3","0.33","40.00",1500,NULL,"C3",NULL,NULL,"60.00","176.00",NULL,NULL,NULL,"2009-04-16","Polyethylene tank----Wall thickness is nominal----tank shot
+  weight is nominal 650 lbs. Reviewed 9/5/19.","septic","2.00",1500
+205,38,"70-109-24S-C3","0.33","40.00",750,969,"C3",NULL,NULL,"60.00","96.00",NULL,NULL,NULL,"2003-06-12","Polyethylene tank----Wall thickness is nominal----tank shot
+  weight is nominal 335 lbs.","septic",NULL,750
+206,38,"70-109-09D-C3","0.25","42.00",900,1059,"C3",NULL,NULL,"60.00","111.00",NULL,NULL,NULL,"2004-07-22","Polyethylene-monolithic. Reviewed 9/5/19.","septic","3.00",900
+207,38,"70-109-11D-C3","0.25","42.00",1050,1225,"C3",NULL,NULL,"60.00","126.00",NULL,NULL,NULL,"2004-07-22","Polyethylene-monolithic. Reviewed 9/5/19.","septic","3.00",1050
+208,38,"70-109-13D-C3","0.25","42.00",1250,1464,"C3",NULL,NULL,"60.00","146.00",NULL,NULL,NULL,"2005-07-14","Polyethylene-monolithic stiffening. Reviewed 9/5/19.","septic","3.00",1250
+209,38,"70-109-16D-C3","0.25","42.00",1500,1745,"C3",NULL,NULL,"60.00","175.00",NULL,NULL,NULL,"2005-07-14","Polyethylene-monolithic stiffening. Reviewed 9/5/19.","septic","3.00",1500
+210,38,"70-109-20D-C3","0.33","40.00",900,NULL,"C3",NULL,NULL,"60.00","111.00",NULL,NULL,NULL,"2009-04-16","Polyethylene tank----Wall thickness is nominal----tank shot
+  weight is nominal 410 lbs. Reviewed 9/5/19.","septic","2.00",900
+211,38,"70-109-21D-C3","0.33","40.00",1050,NULL,"C3",NULL,NULL,"60.00","126.00",NULL,NULL,NULL,"2009-04-16","Polyethylene tank----Wall thickness is nominal----tank shot
+  weight is nominal 450 lbs. Reviewed 9/5/19.","septic","2.00",1050
+212,38,"70-109-22D-C3","0.33","40.00",1250,NULL,"C3",NULL,NULL,"60.00","146.00",NULL,NULL,NULL,"2009-04-16","Polyethylene tank----Wall thickness is nominal----tank shot
+  weight is nominal 550 lbs. Reviewed 9/5/19.","septic","2.00",1250
+213,38,"70-109-23D-C3","0.33","40.00",1500,NULL,"C3",NULL,NULL,"60.00","176.00",NULL,NULL,NULL,"2009-04-16","Polyethylene tank----Wall thickness is nominal----tank shot
+  weight is nominal 650 lbs. Reviewed 9/5/19.","septic","2.00",1500
+194,38,"70-109-03S-C3","0.30","35.94",300,NULL,"C3",NULL,NULL,"48.50","48.50",NULL,NULL,NULL,"2001-10-31","Monolithic polyethylene-300 gallon graywater, laundry
+  tank or 345 gallon pump tank. Reviewed 9/5/19.","dosing","2.70",300
+195,38,"70-109-05S-C4","0.30","43.38",500,NULL,"C4",NULL,NULL,"60.00","60.00",NULL,NULL,NULL,"2001-10-31","Polyethylene. Reviewed 9/5/19.","dosing","3.00",500
+229,35,"70-143-15D-C3","0.70","40.00",NULL,1766,"C3",NULL,NULL,"66.00","155.90",NULL,NULL,NULL,NULL,"Dual compartment polyethylene tank with three internal
+  stiffeners and baffle attached to stiffener. TW-1500","septic","2.75",1500
+230,35,"70-143-15S-C3","0.70","40.00",NULL,1766,"C3",NULL,NULL,"66.00","155.90",NULL,NULL,NULL,NULL,"Single compartment polyethylene tank with three internal
+  stiffeners. TW-1500","septic","2.75",1500
+231,35,"70-143-16S-C4","0.20","44.00",NULL,1750,"C4",NULL,NULL,"61.70","175.60",NULL,NULL,NULL,NULL,"Single compartment polypropylene tank with four vertical
+  stiffeners. Midseam length and width. Use of side inlets/outlets not allowed in Florida. Minimum burial depth is
+  six inches. IM-1530.","septic","2.00",1537
+232,35,"70-143-21D-C4","0.20","44.00",NULL,1309,"C4",NULL,NULL,"61.70","134.20",NULL,NULL,NULL,NULL,"Dual compartment polypropylene tank with internal two
+  vertical stiffeners and baffle attached to stiffener. Midseam length and width. Use of side inlets/outlets not
+  allowed in Florida. Minimum burial is six inches. CM-1060.","septic","2.00",1111
+233,35,"70-143-21S-C4","0.20","44.00",NULL,1309,"C4",NULL,NULL,"61.70","134.20",NULL,NULL,NULL,NULL,"Single compartment polypropylene tank with internal two
+  vertical stiffeners. Midseam length and width. Use of side inlets/outlets not allowed in Florida. Minimum burial
+  is six inches. CM-1060","septic","2.00",1111
+234,35,"70-143-54S-C4","0.20","44.00",NULL,557,"C4",NULL,NULL,"61.70","64.90",NULL,NULL,NULL,NULL,"Polypropylene laundry, or pump tank, or part of a septic tank
+  in series. The tank can have the usual 4-inch diameter outlet hole. It also may have no outlet hole; or two
+  1.5-inch diameter holes. As with all Infiltrator tanks, any holes must be installed by the manufacturer or
+  certified assembler. Approved as a pretreatment tank for the 70-143-EP5S-C3 or 70-143-EP5S-C4 ECOPOD/IM 1060
+  combination. Midseam length and width. Use of side inlets/outlets not allowed in Florida. Minimum burial depth is
+   six inches. IM-540","septic","2.00",483
+235,35,"70-143-55S-C4","0.20","41.25",NULL,322,"C4",NULL,NULL,"50.90","50.90",NULL,NULL,NULL,NULL,"Single compartment polypropylene tank. Graywater, laundry, pump
+   tank, or part of a septic tank in series. Midseam length and width. Use of side inlets/outlets not allowed in
+  Florida. Burial depth minimum 6 inches, maximum 52 inches. IM-300","septic","2.00",278
+236,41,"70-154-CE5-C3","0.12","47.25",540,NULL,"C3",NULL,NULL,"43.25","84.63",NULL,NULL,"1.6","2015-11-19","Fiberglass. Used to house Fuji Clean USA CE5 500 gpd ATU; no mid-seam testing required","atu",NULL,540
+237,41,"70-154-CE7-C3","0.12","50.88",749,NULL,"C3",NULL,NULL,"48.25","94.75",NULL,NULL,"2.0","2015-11-19","Fiberglass.
+  Used to house Fuji Clean USA CE7 700 gpd ATU; no mid-seam testing required","atu",NULL,749
+238,41,"70-154-CE10-C3","0.15","59.00",1069,NULL,"C3",NULL,NULL,"56.25","98.38",NULL,NULL,"2.0","2015-11-19","Fiberglass. Used to house Fuji Clean USA CE10 1000 gpd ATU; no mid-seam testing required","atu",NULL,1069
+239,41,"70-154-CE14-C3","0.12","59.50",1498,NULL,"C3",NULL,NULL,"69.00","119.00",NULL,NULL,"2.5","2016-05-10","Fiberglass.
+  Used to house Fuji Clean USA CE14 1350 gpd ATU; no mid-seam testing required","atu",NULL,1498
+240,41,"70-154-CE21-C3","0.12","63.50",2252,2536,"C3",NULL,NULL,"72.50","152.88",NULL,NULL,"2.0","2016-05-10","Fiberglass. Used to house Fuji Clean USA CE21 1900 gpd ATU; no mid-seam testing required","atu",NULL,2252
+241,41,"70-154-CE30-C3","0.12","68.88",3199,3435,"C3",NULL,NULL,"77.75","183.00",NULL,NULL,"2.1","2016-05-10","Fiberglass. Used to house Fuji Clean USA CE30 2700 gpd ATU; no mid-seam testing required","atu",NULL,3199
+242,41,"70-154-CEN5-C3","0.12","50.88",749,NULL,"C3",NULL,NULL,"48.25","94.75",NULL,NULL,"2.0","2015-11-19","Fiberglass.
+  Used to house Fuji Clean USA CEN5 500 gpd ATU; no mid-seam testing required. The CEN is NSF 245 certified.","atu",NULL,749
+243,41,"70-154-CEN7-C3","0.15","59.00",1069,NULL,"C3",NULL,NULL,"56.25","98.38",NULL,NULL,"2.0","2015-11-19","Fiberglass. Used to house Fuji Clean USA CEN7 700 gpd ATU; no mid-seam testing required. The CEN is NSF 245
+  certified.","atu",NULL,1069
+244,41,"70-154-CEN10-C3","0.12","59.50",1498,NULL,"C3",NULL,NULL,"69.00","119.00",NULL,NULL,"2.5","2015-11-19","Fiberglass.
+  Used to house Fuji Clean USA CEN10 1000 gpd ATU; no mid-seam testing required. The CEN is NSF 245 certified.","atu",NULL,1498
+245,41,"70-154-CEN14-C3","0.12","63.50",2252,2536,"C3",NULL,NULL,"72.50","152.88",NULL,NULL,"2.0","2020-01-30","Fiberglass. Used to house Fuji Clean USA CEN 14 1350 gpd ATU; no mid-seam testing required. The CEN is NSF 245
+  certified.","atu",NULL,2252
+246,41,"70-154-CEN21-C3","0.12","68.88",3199,3435,"C3",NULL,NULL,"77.75","183.00",NULL,NULL,"2.1","2020-02-28","Fiberglass. Used to house Fuji Clean USA CEN21 1900 gpd ATU; no mid-seam testing required.","atu",NULL,3199

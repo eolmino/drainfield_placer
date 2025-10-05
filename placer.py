@@ -6,6 +6,79 @@ Handles placing drainfield configurations into CAD JSON
 import copy
 from shapely.affinity import translate, rotate
 import math
+import csv
+from pathlib import Path
+
+
+def get_tank_dimensions(tank_gallons, data_dir="data"):
+    """
+    Get tank dimensions from fdep_tanks.csv
+
+    Args:
+        tank_gallons: Tank capacity in gallons
+        data_dir: Directory containing data files
+
+    Returns:
+        Tuple of (width_ft, length_ft) or None if not found
+    """
+    csv_path = Path(data_dir) / "fdep_tanks.csv"
+
+    if not csv_path.exists():
+        return None
+
+    with open(csv_path, 'r') as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            if row.get('effective_gallons') == str(tank_gallons):
+                width_in = row.get('width')
+                length_in = row.get('length')
+
+                if width_in and length_in:
+                    try:
+                        # Convert inches to feet
+                        width_ft = float(width_in) / 12.0
+                        length_ft = float(length_in) / 12.0
+                        return (width_ft, length_ft)
+                    except (ValueError, TypeError):
+                        pass
+
+    return None
+
+
+def create_tank_rectangle(x, y, width_ft, length_ft, label):
+    """
+    Create a tank rectangle polyline
+
+    Args:
+        x: X position of bottom-left corner
+        y: Y position of bottom-left corner
+        width_ft: Tank width in feet
+        length_ft: Tank length in feet
+        label: Tank label text
+
+    Returns:
+        Polyline dictionary representing the tank
+    """
+    points = [
+        {'x': x, 'y': y},
+        {'x': x + length_ft, 'y': y},
+        {'x': x + length_ft, 'y': y + width_ft},
+        {'x': x, 'y': y + width_ft},
+        {'x': x, 'y': y}  # Close the rectangle
+    ]
+
+    return {
+        'points': points,
+        'selected': False,
+        'layer': 'tanks',
+        'metadata': {
+            'source': 'drainfield_placer',
+            'type': 'tank',
+            'label': label,
+            'width_ft': width_ft,
+            'length_ft': length_ft
+        }
+    }
 
 
 def translate_point(point, dx, dy):
@@ -108,45 +181,53 @@ def calculate_polygon_centroid(points):
     return (cx, cy)
 
 
-def place_drainfield(base_cad_json, selection_result):
+def place_drainfield(base_cad_json, selection_result, spec_text=None,
+                    septic_tank_gallons=None, dosing_tank_gallons=None):
     """
     Place the selected drainfield configuration into CAD JSON
-    
+
     Args:
         base_cad_json: Original CAD JSON structure
         selection_result: Result dictionary from selector
-        
+        spec_text: Optional specification text to add at (0,0)
+        septic_tank_gallons: Septic tank size in gallons (for drawing tank)
+        dosing_tank_gallons: Dosing tank size in gallons (for drawing tank)
+
     Returns:
         Modified CAD JSON with drainfield added
     """
     # Deep copy to avoid modifying original
     output_cad = copy.deepcopy(base_cad_json)
-    
+
     # Ensure polylines array exists
     if 'polylines' not in output_cad:
         output_cad['polylines'] = []
-    
+
+    # Ensure texts array exists
+    if 'texts' not in output_cad:
+        output_cad['texts'] = []
+
     # Get the drainfield configuration
     config_data = selection_result['config_data']
     rotation = selection_result['rotation']
     dx = selection_result['offset_x']
     dy = selection_result['offset_y']
-    
+
     # Get polylines from config
     drainfield_polylines = config_data['cad_json']['polylines']
-    
+
     # Find shoulder polyline to get centroid (rotation origin)
     shoulder = None
     for polyline in drainfield_polylines:
         if polyline.get('closed', False):
             shoulder = polyline
             break
-    
+
     if shoulder:
         origin_x, origin_y = calculate_polygon_centroid(shoulder['points'])
     else:
         origin_x, origin_y = 0, 0
-    
+
     # Transform and add each polyline
     for polyline in drainfield_polylines:
         transformed = transform_polyline(
@@ -157,7 +238,7 @@ def place_drainfield(base_cad_json, selection_result):
             dx,
             dy
         )
-        
+
         # Add metadata about the placement
         transformed['metadata'] = {
             'source': 'drainfield_placer',
@@ -166,32 +247,105 @@ def place_drainfield(base_cad_json, selection_result):
             'rotation': rotation,
             'is_shoulder': polyline.get('closed', False)
         }
-        
+
         output_cad['polylines'].append(transformed)
-    
+
+    # Add specification text at (0, 0) if provided
+    # Split into separate text objects (one per line) for CAD compatibility
+    if spec_text:
+        lines = spec_text.split('\n')
+        line_spacing = 5.52  # Vertical spacing between lines
+        text_height = 5      # Text height
+
+        for i, line in enumerate(lines):
+            if line.strip():  # Only add non-empty lines
+                text_obj = {
+                    'x': 0.0,
+                    'y': -i * line_spacing,  # Decrease Y for each line
+                    'text': line,
+                    'height': text_height,
+                    'rotation': 0,
+                    'selected': False
+                }
+                output_cad['texts'].append(text_obj)
+
+    # Add tank rectangles near the specification text
+    tank_x_start = 20.0  # Start tanks 20 feet to the right of text
+    tank_y_start = 0.0   # Align top with text
+    tank_spacing = 2.0   # Space between tanks
+
+    current_x = tank_x_start
+
+    # Add septic tank
+    if septic_tank_gallons:
+        dims = get_tank_dimensions(septic_tank_gallons)
+        if dims:
+            width_ft, length_ft = dims
+            tank_poly = create_tank_rectangle(current_x, tank_y_start, width_ft, length_ft,
+                                             f'SEPTIC TANK {septic_tank_gallons} GAL')
+            output_cad['polylines'].append(tank_poly)
+
+            # Add label text for tank
+            label_text = {
+                'x': current_x + length_ft / 2,
+                'y': tank_y_start + width_ft / 2,
+                'text': f'SEPTIC TANK\n{septic_tank_gallons} GAL',
+                'height': 3,
+                'rotation': 0,
+                'selected': False
+            }
+            output_cad['texts'].append(label_text)
+
+            current_x += length_ft + tank_spacing
+
+    # Add dosing tank
+    if dosing_tank_gallons:
+        dims = get_tank_dimensions(dosing_tank_gallons)
+        if dims:
+            width_ft, length_ft = dims
+            tank_poly = create_tank_rectangle(current_x, tank_y_start, width_ft, length_ft,
+                                             f'DOSING TANK {dosing_tank_gallons} GAL')
+            output_cad['polylines'].append(tank_poly)
+
+            # Add label text for tank
+            label_text = {
+                'x': current_x + length_ft / 2,
+                'y': tank_y_start + width_ft / 2,
+                'text': f'DOSING TANK\n{dosing_tank_gallons} GAL',
+                'height': 3,
+                'rotation': 0,
+                'selected': False
+            }
+            output_cad['texts'].append(label_text)
+
     return output_cad
 
 
-def place_split_drainfield(base_cad_json, selection_result):
+def place_split_drainfield(base_cad_json, selection_result, spec_text=None,
+                          septic_tank_gallons=None, dosing_tank_gallons=None):
     """
     Place a split drainfield system into CAD JSON
-    
+
     Args:
         base_cad_json: Original CAD JSON structure
         selection_result: Split system result dictionary
-        
+        septic_tank_gallons: Septic tank size in gallons (for drawing tank)
+        dosing_tank_gallons: Dosing tank size in gallons (for drawing tank)
+        spec_text: Optional specification text to add at (0,0)
+
     Returns:
         Modified CAD JSON with both drainfields added
     """
     # Start with base
     output_cad = copy.deepcopy(base_cad_json)
-    
-    # Place first drainfield
+
+    # Place first drainfield (without text or tanks)
     output_cad = place_drainfield(output_cad, selection_result['drainfield_1'])
-    
-    # Place second drainfield
-    output_cad = place_drainfield(output_cad, selection_result['drainfield_2'])
-    
+
+    # Place second drainfield (with text and tanks if provided)
+    output_cad = place_drainfield(output_cad, selection_result['drainfield_2'], spec_text,
+                                 septic_tank_gallons, dosing_tank_gallons)
+
     return output_cad
 
 

@@ -1,8 +1,8 @@
 @echo off
-REM Simple runner - No virtual environment needed!
+REM Drainfield Placer - Main Application Runner
 
 echo ============================================================
-echo   DRAINFIELD PLACER - Quick Test
+echo   DRAINFIELD PLACER - Automatic Configuration Tool
 echo ============================================================
 echo.
 
@@ -25,8 +25,16 @@ if errorlevel 1 (
 )
 
 echo.
-echo Running test...
+echo Checking psycopg2 (for database)...
+python -c "import psycopg2; print('psycopg2 installed: OK')" 2>nul
+if errorlevel 1 (
+    echo Note: psycopg2 not installed (optional - only needed for database updates)
+    echo To install: pip install psycopg2
+)
+
 echo.
-python simple_test.py
+echo Starting application...
+echo.
+python main.py
 
 pause
